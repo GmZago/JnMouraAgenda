@@ -1,0 +1,42 @@
+﻿@model JnMouraAgenda.Models.DadosAgenda
+
+@{
+    ViewBag.Title = "Detailhes do Registro";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dados Agenda</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.IdTelefone }) |
+    @Html.ActionLink("Voltar Pagina Inicial", "Index")
+</p>
